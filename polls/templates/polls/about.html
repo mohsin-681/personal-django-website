@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      {% load static %}
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>brandon</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'polls/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'polls/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'polls/images/fevicon.png' %}" type="image/gif" />
+      
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'polls/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout head_posstinhi">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'polls/images/loading.gif' %}" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="/polls">Home</a>
+         <a class="active" href="/polls/about.html">About</a>
+         <a href="/polls/about.html">Classes</a>
+         <a href="/polls/about.html">Testimonials</a>
+         <a href="/polls/contact.html">Contact</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="/polls"><img src="{% static 'polls/images/logo.png' %}" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="right_bottun">
+                        <a class="login" href="#">Login</a>
+                        <button class="openbtn" onclick="openNav()"><img src="{% static 'polls/images/menu_icon.png' %}" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+   <div class="red_bg">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="titlepage">
+                     <h2>About</h2>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+      <!-- about section -->
+      <div id="about" class="about afbecros">
+         <div class="container">
+            <div class="row ">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                    
+                     <figure><img src="{% static 'polls/images/coding.jpg' %}" alt="#"/></figure>
+                     <!-- <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it It is a long established fact that a reader will be distracted by the readable content of a page when lookingusing Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it </p> -->
+                     <p>I'm a 23 year old developer based in Dubai. I write in Pyton, talk to databases and make servers do stuff. I am always open to exploring new opportunities. Please feel free to check out my work and let's have a coffee video chat if you'd like to hear more.</p>
+                     <a class="read_more" href="#">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+     
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="fid_box">
+                        <ul class="location_icon">
+                           <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
+                           <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br>+01 1234567890
+                           </li>
+                           <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="dolor">
+                        <p>Interested in hiring me for your project or just want to say hi? <br>You can fill in the contact form below or send me an email to <i>testing@gmail.com</i></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2019 All Rights . Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'polls/js/jquery.min.js' %}""></script>
+      <script src="{% static 'polls/js/popper.min.js' %}"></script>
+      <script src="{% static 'polls/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'polls/js/jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'polls/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'polls/js/custom.js' %}"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script>
+   </body>
+</html>
+
